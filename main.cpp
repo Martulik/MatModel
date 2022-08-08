@@ -14,7 +14,7 @@ void print(double x1, double x2, double x3, double x4, double p2, double p3)
   std::cout << '\n';
 }
 
-void doCalculation(double h)
+void do_сalculation_outside_stationary(double h)
 {
   double x1 = h;
   int num_steps = 4.0 / h;
@@ -34,7 +34,7 @@ void doCalculation(double h)
   }
 }
 
-void doCalculation2(double h)
+void doCalculation_in_stationary(double h)
 {
   double x1 = 2;
   double x3 = 2;
@@ -52,7 +52,7 @@ void doCalculation2(double h)
   }
 }
 
-void check(double x1)
+void check_results(double x1)
 {
   std::cout << "x1_dt = " << std::fixed << x1_dt(x1) << '\n';
   std::cout << "x2_dt = " << x2_dt(x1) << '\n';
@@ -62,7 +62,6 @@ void check(double x1)
   std::cout << "determinant = " << determinant(x1) << '\n';
   std::cout << "determinant dp2 = " << determinant_dp2(x1) << '\n';
   std::cout << "determinant dp3 = " << determinant_dp3(x1) << '\n';
-
 }
 
 int main()
